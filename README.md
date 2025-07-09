@@ -1,4 +1,4 @@
-# Web Point Cloud Viewer
+# Point Cloud Viewer via Web Browser
 
 Streamlit + Open3D + PyDeckを使用したWeb上の点群ビューアーのコード例
 

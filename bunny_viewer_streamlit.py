@@ -4,9 +4,8 @@ import numpy as np
 import pandas as pd
 import pydeck as pdk
 import streamlit.components.v1 as components
-from typing import Tuple, Dict, Any, List
+from typing import Dict, Any, List
 import matplotlib.pyplot as plt
-import matplotlib.colors as mcolors
 from enum import Enum
 
 
@@ -350,8 +349,7 @@ BACKGROUND_COLOR = [128, 128, 128]  # グレー背景
 
 # ページ設定
 st.set_page_config(layout="wide")
-st.title("高性能3D点群ビューア (Pydeck版)")
-st.markdown("インタラクティブな3D可視化ライブラリPydeckを使用し、リッチな情報提示を実現します。")
+st.title("3D点群ビューア (Streamlit + Pydeck版)")
 
 
 # ===== 点群処理関数 =====
@@ -567,7 +565,6 @@ def main():
     - **ズーム:** マウスホイールをスクロール
     """
     )
-    
     # 再生成ボタン
     if st.button("再生成", type="primary"):
         st.rerun()

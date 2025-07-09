@@ -7,11 +7,14 @@ Streamlit + Open3D + PyDeckを使用したWeb上の点群ビューアーのコ�
 ### 1. uvを使用した環境構築
 
 ```bash
-# 依存関係のインストール
-uv sync
+# python仮想環境の作成
+uv venv
 
 # 仮想環境をアクティベート
-uv shell
+source .venv/bin/activate
+
+# 依存関係のインストール
+uv sync
 ```
 
 ### 2. アプリケーションの起動

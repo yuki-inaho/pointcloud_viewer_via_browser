@@ -350,7 +350,8 @@ BACKGROUND_COLOR = [128, 128, 128]  # グレー背景
 
 # ページ設定
 st.set_page_config(layout="wide")
-st.title("Streamlit + Open3D Point Cloud Viewer")
+st.title("高性能3D点群ビューア (Pydeck版)")
+st.markdown("インタラクティブな3D可視化ライブラリPydeckを使用し、リッチな情報提示を実現します。")
 
 
 # ===== 点群処理関数 =====
@@ -566,6 +567,10 @@ def main():
     - **ズーム:** マウスホイールをスクロール
     """
     )
+    
+    # 再生成ボタン
+    if st.button("再生成", type="primary"):
+        st.rerun()
 
 
 if __name__ == "__main__":

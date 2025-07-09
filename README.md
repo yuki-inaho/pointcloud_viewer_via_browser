@@ -1,6 +1,6 @@
 # Point Cloud Viewer via Web Browser
 
-Streamlit + Open3D + PyDeckを使用したWeb上の点群ビューアーのコード例
+Stanford Bunnyの点群データを3D表示するWebアプリケーション
 
 ## インストール手順
 
@@ -19,10 +19,28 @@ uv sync
 
 ### 2. アプリケーションの起動
 
+#### Streamlit版 (Pydeck使用)
+
 ```bash
 # Streamlitアプリケーションを起動（デフォルトポート8501）
 streamlit run bunny_viewer_streamlit.py
 
 # 特定のポートを指定して起動
 streamlit run bunny_viewer_streamlit.py --server.port 8080
+```
+
+#### Gradio版 (Plotly使用)
+
+```bash
+# Gradioアプリケーションを起動（デフォルトポート7860）
+python bunny_viewer_gradio.py
+
+# 特定のポートで起動
+python bunny_viewer_gradio.py --port 8080
+
+# 共有リンク付きで起動
+python bunny_viewer_gradio.py --share
+
+# ヘルプを表示
+python bunny_viewer_gradio.py --help
 ```
